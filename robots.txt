@@ -1,1 +1,1 @@
-User-agent: * Disallow: Sitemap: https://adisuyash.github.io/portfolio/sitemap.xml
+User-agent: * Disallow: Sitemap: https://adisuyash.github.io/sitemap.xml
