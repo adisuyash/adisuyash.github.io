@@ -1,14 +1,15 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - adisuyash
+  - techbastic
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - convergent
+  - techbastic/techbastic
+  - buy-me-a-coffee
+  - 0xPunkItachi/NeoBazar
+  - portfolio
+  - techbastic/roadmaps
+
+# If the deployment is failed, please remove the above section
