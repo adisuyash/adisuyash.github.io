@@ -2,11 +2,9 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: Aditya Gupta
+    - name: Career Goal
+      value: Transitioning from a Dev Community Manager into a Developer Relations (DevRel) role.
 
 - title: Education
   type: time_table
@@ -94,4 +92,19 @@
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Networking, Traveling, Mentoring Developers, Working on side hustles. 
+
+# If the deployment is failed, please remove the following section
+- title: Contact Information
+  type: map
+  contents:
+    - name: Email
+      value: adityasuyashgupta@gmail.com
+    - name: LinkedIn
+      value: https://www.linkedin.com/in/adisuyash/
+    - name: GitHub
+      value: https://github.com/adisuyash
+    - name: X / Twitter
+      value: https://x.com/adisuyash
+    - name: Telegram
+      value: https://t.me/adisuyash
