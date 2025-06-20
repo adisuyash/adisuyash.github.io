@@ -15,47 +15,45 @@ export default function Page() {
           priority
         />
       </a>
-      <h1 className="mb-8 text-2xl font-medium">Portfolio template!</h1>
+      <h1 className="mb-8 text-2xl font-medium">hey {"👋"}</h1>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          A clean, fast, and lightweight portfolio template built with Next.js,
-          Vercel, and Tailwind CSS.
+          i'm Adi - a self-taught dev and kinesthetic
+          <br />
+          learner who's always building something new ⚡
         </p>
         <p>
-          Nextfolio has everything you need for a portfolio: MDX blog, SEO, RSS,
-          Atom & JSON feeds, analytics, Tweet & YouTube embeds, KaTeX and {""}
-          <a
-            target="_blank"
-            href="https://github.com/1msirius/Nextfolio?tab=readme-ov-file#features"
-          >
-            more
-          </a>
-          .
+          {/* been around for 2.5+ years - <br /> learning and building PWAs (progressive web apps), dApps (decentralized apps) and developer communities. */}
+          for the past 2.5+ years,
+          <br /> i've been shipping web & onchain apps, advocating for devs and
+          helping grow developer communities 🌍
         </p>
         <p>
-          Nextfolio is{" "}
-          <a href={socialLinks.github} target="_blank">
-            open-source
+          to share what i've learned, we're building <br />{" "}
+          <a href={socialLinks.techbastic} target="_blank">
+            <strong>
+              {" "}
+              <em>Tech Bastic</em>
+            </strong>
           </a>{" "}
-          and fully customizable, making it easy to add more features.
+          - an open-source community that helps you become a self-taught web3
+          developer - where we learn, build, and collaborate 💻
         </p>
         <p>
-          <a
-            href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F1msirius%2FNextfolio"
-            target="_blank"
-          >
-            Deploy
+          i love creating tech content, hacking at hackathons, <br /> connecting
+          with folks in the community, and travelling solo ✈️
+        </p>
+        <p>
+          want to connect? {"🤝"} <br /> grab a time slot{" "}
+          <a href={socialLinks.calcom} target="_blank">
+            <em>here</em>
           </a>{" "}
-          your Nextfolio site with Vercel in minutes and follow the set up
-          instructions in the{" "}
-          <a href="/blog/getting-started">Getting Started</a> post.
-        </p>
-        <p>
-          Built and maintained by{" "}
-          <a href="https://imsirius.xyz/" target="_blank">
-            Sirius
+          {/* <br /> */}
+          (or) shoot me an{" "}
+          <a href={socialLinks.email} target="_blank">
+            <em>email</em>
           </a>
-          .
+          {"."}
         </p>
       </div>
     </section>
