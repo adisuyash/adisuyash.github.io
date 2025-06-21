@@ -13,6 +13,7 @@ export const socialLinks = {
   instagram: "https://www.instagram.com/adisuyash.tech",
   linkedin: "https://www.linkedin.com/in/adisuyash",
   email: "mailto:adityasuyashgupta@gmail.com",
+  youtube: "https://www.youtube.com/@TechWithAdiSuyash",
   techbastic: "https://techbastic.github.io",
   calcom: "https://cal.com/adisuyash"
 };
