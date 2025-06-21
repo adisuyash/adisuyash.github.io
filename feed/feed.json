@@ -1,14 +1,14 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "Nextfolio",
-    "home_page_url": "https://nextfolio-template.vercel.app/",
-    "feed_url": "https://nextfolio-template.vercel.app/feed.json",
-    "description": "A clean, fast, and lightweight portfolio template built with Next.js, Vercel, and Tailwind CSS for optimal performance.",
+    "title": "Aditya Gupta @adisuyash",
+    "home_page_url": "https://adinextfolio.vercel.app/",
+    "feed_url": "https://adinextfolio.vercel.app/feed.json",
+    "description": "Building developer communities, educating on Web3, and simplifying blockchain through content.",
     "items": [
         {
-            "id": "https://nextfolio-template.vercel.app/blog/custom-mdx-examples",
+            "id": "https://adinextfolio.vercel.app/blog/custom-mdx-examples",
             "content_html": "Nextfolio custom MDX examples.",
-            "url": "https://nextfolio-template.vercel.app/blog/custom-mdx-examples",
+            "url": "https://adinextfolio.vercel.app/blog/custom-mdx-examples",
             "title": "Custom MDX Examples",
             "date_modified": "2024-08-11T00:00:00.000Z",
             "tags": [
@@ -17,9 +17,9 @@
             ]
         },
         {
-            "id": "https://nextfolio-template.vercel.app/blog/getting-started",
+            "id": "https://adinextfolio.vercel.app/blog/getting-started",
             "content_html": "Instructions to build and configure your Nextfolio portfolio.",
-            "url": "https://nextfolio-template.vercel.app/blog/getting-started",
+            "url": "https://adinextfolio.vercel.app/blog/getting-started",
             "title": "Getting Started with Nextfolio",
             "date_modified": "2024-08-13T00:00:00.000Z",
             "tags": [
