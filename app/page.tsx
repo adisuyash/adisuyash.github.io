@@ -3,13 +3,23 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { socialLinks } from "./lib/config";
 
+const images = [
+  { src: "/profile.jpg", alt: "AdiSuyash Profile Pic" },
+  { src: "/photos/selfquack.png", alt: "HackQuester Adi's Quack" },
+];
+
 export default function Page() {
   const [copied, setCopied] = useState(false);
+  const [currentImage, setCurrentImage] = useState(0);
   const [isHydrated, setIsHydrated] = useState(false);
   const email = "adityasuyashgupta@gmail.com";
 
   useEffect(() => {
     setIsHydrated(true);
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % images.length);
+    }, 3000);
+    return () => clearInterval(interval);
   }, []);
 
   const copyEmail = async () => {
@@ -25,18 +35,25 @@ export default function Page() {
   return (
     <section>
       <a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer">
-        <Image
-          src="/profile.jpg"
-          alt="Profile photo"
-          className="rounded-full bg-gray-100 block lg:mt-5 mt-0 lg:mb-5 mb-10 mx-auto sm:float-right sm:ml-5 sm:mb-5 grayscale hover:grayscale-0"
-          unoptimized
-          width={160}
-          height={160}
-          priority
-        />
+        <div className="relative w-40 h-40 mx-auto sm:mx-0 sm:float-right sm:ml-5 sm:mb-5 mb-10">
+          {images.map((img, idx) => (
+            <Image
+              key={idx}
+              src={img.src}
+              alt={img.alt}
+              fill
+              className={`absolute object-cover border border-neutral-200 dark:border-neutral-700 shadow-md transition-opacity duration-1000 ease-in-out rounded-xl ${
+                idx === currentImage ? "opacity-100 z-10" : "opacity-0 z-0"
+              }`}
+              unoptimized
+              priority={idx === 0}
+            />
+          ))}
+        </div>
       </a>
+
       <h1 className="mb-8 text-2xl font-medium">hey 👋</h1>
-      <div className="prose prose-neutral dark:prose-invert">
+      <div className="prose prose-neutral dark:prose-invert mb-12">
         <p>
           i'm Adi - a self-taught dev and kinesthetic
           <br />
@@ -85,7 +102,7 @@ export default function Page() {
             {isHydrated && copied && (
               <span
                 className="absolute left-full top-1/2 -translate-y-1/2 ml-2 px-3 py-1 rounded bg-green-100 text-green-800 text-xs shadow transition-opacity duration-300 whitespace-nowrap
-                after:content-[''] after:absolute after:left-[-6px] after:top-1/2 after:-translate-y-1/2 after:border-4 after:border-transparent after:border-r-green-100"
+              after:content-[''] after:absolute after:left-[-6px] after:top-1/2 after:-translate-y-1/2 after:border-4 after:border-transparent after:border-r-green-100"
               >
                 copied!
               </span>
@@ -94,6 +111,18 @@ export default function Page() {
           .
         </p>
       </div>
+
+      {/* // Full-width Banner
+      <div className="w-full max-w-[960px] mx-auto mb-12">
+        <Image
+          src="/photos/banner.png"
+          alt="Photo gallery banner"
+          width={960}
+          height={240}
+          className="rounded-xl object-cover w-full h-auto"
+          priority
+        />
+      </div> */}
     </section>
   );
 }

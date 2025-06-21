@@ -1,6 +1,6 @@
 export const metaData = {
   baseUrl: "https://adinextfolio.vercel.app/",
-  title: "adisuyash",
+  title: "Aditya Gupta @adisuyash",
   name: "Aditya Gupta",
   ogImage: "/opengraph-image.png",
   description:
@@ -15,5 +15,5 @@ export const socialLinks = {
   email: "mailto:adityasuyashgupta@gmail.com",
   youtube: "https://www.youtube.com/@TechWithAdiSuyash",
   techbastic: "https://techbastic.github.io",
-  calcom: "https://cal.com/adisuyash"
+  calcom: "https://cal.com/adisuyash",
 };

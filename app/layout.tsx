@@ -5,7 +5,7 @@ import { Navbar } from "./components/nav";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "./components/footer";
-import { ThemeProvider } from "./components/theme-switch";
+import { ThemeProvider } from "./components/theme-provider"; // updated import
 import { metaData } from "./lib/config";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -52,7 +52,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.className}`}>
+    <html lang="en" className={inter.className} suppressHydrationWarning>
       <head>
         <link
           rel="alternate"
@@ -73,20 +73,17 @@ export default function RootLayout({
           title="JSON Feed"
         />
       </head>
-      <body className="antialiased flex flex-col items-center justify-center mx-auto mt-2 lg:mt-8 mb-12">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <main className="flex-auto min-w-0 mt-2 md:mt-6 flex flex-col px-6 sm:px-4 md:px-0 max-w-[624px] w-full">
-            <Navbar />
-            {children}
+      <body className="min-h-screen flex flex-col">
+        <ThemeProvider>
+          <div className="flex flex-col flex-1 items-center w-full">
+            <main className="flex-auto w-full max-w-[960px] px-6 sm:px-4 mt-2 md:mt-6">
+              <Navbar />
+              {children}
+            </main>
             <Footer />
-            <Analytics />
-            <SpeedInsights />
-          </main>
+          </div>
+          <Analytics />
+          <SpeedInsights />
         </ThemeProvider>
       </body>
     </html>

@@ -3,19 +3,22 @@ export interface Project {
   year: number;
   description: string;
   url: string;
+  image: string;
 }
 
 export const projects: Project[] = [
   {
-    title: "Mithril AI",
+    title: "Convergent",
     year: 2024,
-    description: "Open science AI resarch lab",
-    url: "https://github.com/mithrilai",
+    description: "Trade Perpetuals on AO",
+    url: "https://github.com/adisuyash/convergent",
+    image: ""
   },
   {
-    title: "OpenDeepLearning",
-    year: 2023,
-    description: "Open source AI education resources",
-    url: "https://opendeeplearning.xyz/",
+    title: "DAO Town",
+    year: 2024,
+    description: "Create DAOs in minutes!",
+    url: "https://github.com/adisuyash/DAOTown",
+    image: ""
   },
 ];
