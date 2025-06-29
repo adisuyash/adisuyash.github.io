@@ -1,11 +1,14 @@
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  reactStrictMode: true,
+  trailingSlash: true,
+  assetPrefix: "/",
   images: {
     unoptimized: true,
   },
-  assetPrefix: "/",
-  basePath: "",
+  experimental: {
+    esmExternals: "loose",
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;

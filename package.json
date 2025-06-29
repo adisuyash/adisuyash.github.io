@@ -5,7 +5,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "deploy": "GH_PAGES=true pnpm build && touch out/.nojekyll && pnpm gh-pages -d out"
+    "lint": "next lint",
+    "deploy": "pnpm build && touch out/.nojekyll && npx gh-pages -d out",
+    "test-local": "pnpm build && pnpm dlx serve out"
   },
   "homepage": "https://adisuyash.github.io",
   "dependencies": {
