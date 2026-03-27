@@ -36,12 +36,12 @@ function Code({ children, ...props }) {
 }
 
 function Table({ data }) {
-  let headers = data.headers.map((header, index) => (
+  let headers = (data?.headers || []).map((header, index) => (
     <th key={index}>{header}</th>
   ));
-  let rows = data.rows.map((row, index) => (
+  let rows = (data?.rows || []).map((row, index) => (
     <tr key={index}>
-      {row.map((cell, cellIndex) => (
+      {(row || []).map((cell, cellIndex) => (
         <td key={cellIndex}>{cell}</td>
       ))}
     </tr>
