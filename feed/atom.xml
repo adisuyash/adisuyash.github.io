@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://adinextfolio.vercel.app/</id>
     <title>Aditya Gupta @adisuyash</title>
-    <updated>2025-07-13T12:42:49.816Z</updated>
+    <updated>2026-03-27T01:37:15.650Z</updated>
     <generator>Feed for Node.js</generator>
     <link rel="alternate" href="https://adinextfolio.vercel.app/"/>
     <link rel="self" href="https://adinextfolio.vercel.app/atom.xml"/>
     <subtitle>Building developer communities, educating on Web3, and simplifying blockchain through content.</subtitle>
-    <rights>All rights reserved 2025, Aditya Gupta @adisuyash</rights>
+    <rights>All rights reserved 2026, Aditya Gupta @adisuyash</rights>
     <entry>
         <title type="html"><![CDATA[Custom MDX Examples]]></title>
         <id>https://adinextfolio.vercel.app/blog/custom-mdx-examples</id>
